@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/assets/pages/intro_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,10 +10,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Image(image: "assets/Shoes/nike.png"),
-      ],
+    return MaterialApp
+    (
+      debugShowCheckedModeBanner: false,
+      home: IntroPage(),
     );
   }
 }
