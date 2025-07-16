@@ -41,22 +41,54 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold
     (
+      drawer: Drawer
+      (
+        backgroundColor: Colors.grey[900],
+        child: Column
+        (
+          children: 
+          [
+            DrawerHeader(child: Image.asset("lib/assets/logo/nikeLogo.png", color: Colors.white,)),
+            
+            Padding
+            (
+              padding: const EdgeInsets.symmetric
+              (
+                horizontal: 25.0
+              ),
+              child: Divider
+              (
+                color: Colors.grey[800],
+              ),
+            )
+          ],
+        ),
+      ),
       backgroundColor: Colors.grey[300],
       //APP BAR
       appBar: AppBar
       (
-        backgroundColor: Colors.grey,
+        leading: Builder
+        (
+          builder: (context) => IconButton
+        (
+          onPressed: () 
+          {
+            Scaffold.of(context).openDrawer();
+          }, 
+          icon: const Icon
+          (
+            Icons.menu, 
+            color: Colors.black,
+          ),
+        ),
+        ), 
+        
+        
+        backgroundColor: Colors.transparent,
         elevation: 0,
-        title: Text
-        (
-          _appBarTitle,
-        ),
-        titleTextStyle: TextStyle
-        (
-          color: Colors.black,
-          fontWeight: FontWeight.bold,
-          fontSize: 35
-        ),
+        
+        
       ),
 
 
