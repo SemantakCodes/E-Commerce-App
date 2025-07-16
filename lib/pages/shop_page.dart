@@ -1,3 +1,5 @@
+import 'package:e_commerce_app/components/message.dart';
+import 'package:e_commerce_app/components/search.dart';
 import 'package:flutter/material.dart';
 
 class ShopPage extends StatefulWidget {
@@ -8,12 +10,24 @@ class ShopPage extends StatefulWidget {
 }
 
 class _ShopPageState extends State<ShopPage> {
+  
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold
-    (
+    return Scaffold(
       backgroundColor: Colors.grey[300],
-      body: Center(child: Text("SHOP PAGE")),
+      body: Column
+      (
+        children: 
+        [
+          //Search bar
+          Search(),
+
+          const SizedBox(height: 12,),
+          //message
+          Message(),
+        ],
+      ),
     );
   }
 }
