@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class IntroPage extends StatelessWidget {
   //Variable
-  final String _title = "Just DO It";
+  final String _title = "Just Do It";
   final String _subTitle = "Best shoes with premium quality";
 
   const IntroPage({super.key});
@@ -18,6 +18,7 @@ class IntroPage extends StatelessWidget {
         (
           children: 
           [
+            const SizedBox(height: 48),
             //LOGO
             Padding(
               padding: const EdgeInsets.all(25),
@@ -26,6 +27,8 @@ class IntroPage extends StatelessWidget {
               ),
             ),
             //TITLE
+            const SizedBox(height: 48,),
+            
             Text
             (
               _title,
@@ -51,7 +54,8 @@ class IntroPage extends StatelessWidget {
               ),
               ),
             ),
-        
+
+              const SizedBox(height: 20),
             //START NOW BUTTON
             GestureDetector
             (
