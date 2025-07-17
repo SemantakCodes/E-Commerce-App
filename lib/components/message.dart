@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class Message extends StatelessWidget {
   const Message({super.key});
-  final String _heartTouchingMessage = "PEOPLE FLY AWAY BUT NOT FROM YOU \n WE GO BRRRRR";
+  final String _heartTouchingMessage = "PEOPLE FLY AWAY BUT NOT FROM YOU";
 
   @override
   Widget build(BuildContext context) {
@@ -17,9 +17,10 @@ class Message extends StatelessWidget {
             _heartTouchingMessage,
             style: TextStyle
             (
-              fontSize: 21,
+              fontSize: 17,
               fontStyle: FontStyle.italic,
               fontWeight: FontWeight.w600,
+              color: Colors.grey[600],
             ),
           ),
         ),
