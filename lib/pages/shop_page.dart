@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/components/hot_pics.dart';
 import 'package:e_commerce_app/components/message.dart';
 import 'package:e_commerce_app/components/search.dart';
 import 'package:flutter/material.dart';
@@ -26,6 +27,10 @@ class _ShopPageState extends State<ShopPage> {
           const SizedBox(height: 12,),
           //message
           Message(),
+
+          const SizedBox(height: 12,),
+
+          HotPics(),
         ],
       ),
     );
